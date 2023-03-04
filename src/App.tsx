@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {Feed, Navbar, RightBar, Sidebar} from "./components";
 import {Box, Stack} from "@mui/material";
+import AddFeed from "./components/AddFeed";
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
                 <Feed/>
                 <RightBar/>
             </Stack>
-
+            <AddFeed/>
         </Box>
     )
 }
