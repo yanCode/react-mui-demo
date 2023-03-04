@@ -1,10 +1,13 @@
 import {FC} from "react";
-import {alpha, Box, styled} from "@mui/material";
+import {Box} from "@mui/material";
+import Post from "./Post";
 
 
 const Feed: FC = () => {
-    return (<Box flex={4} p={2} bgcolor='sienna'>
-
+    return (<Box flex={4} p={2}>
+        <Post/>
+        <Post/>
+        <Post/>
 
     </Box>)
 }

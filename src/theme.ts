@@ -1,8 +1,4 @@
-import {createTheme, PaletteColorOptions} from "@mui/material";
-import {blue, green, orange, pink} from "@mui/material/colors";
+import {createTheme} from "@mui/material";
 
 
-export const theme = createTheme({
-
-
-})
+export const theme = createTheme({})
