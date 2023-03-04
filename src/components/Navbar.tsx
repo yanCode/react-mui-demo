@@ -37,7 +37,7 @@ const IconWrapper = styled(Box)(({theme}) => ({
     [theme.breakpoints.up('sm')]: {display: 'flex'}
 }))
 
-const UserWrapper = styled(Box)(({theme}) => ({
+export const UserWrapper = styled(Box)(({theme}) => ({
     display: 'flex',
     alignItems: 'center',
     gap: '.1rem'
