@@ -76,7 +76,7 @@ const RightBar: FC = () => {
                         </>}
                     />
                 </ListItem>
-                <Divider variant='inset' component='li'/>
+
                 <Divider variant="inset" component="li"/>
                 <ListItem alignItems="flex-start">
                     <ListItemAvatar>

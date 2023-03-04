@@ -13,7 +13,7 @@ import {
     Typography
 } from "@mui/material";
 import React, {FC, useState} from "react";
-import {Attractions, MailOutline, NotificationsOutlined, SearchOffRounded, SearchRounded} from "@mui/icons-material";
+import {Attractions, MailOutline, NotificationsOutlined,  SearchRounded} from "@mui/icons-material";
 
 const StyledToobar = styled(Toolbar)({
     display: 'flex',
@@ -22,8 +22,9 @@ const StyledToobar = styled(Toolbar)({
 
 const SearchWrapper = styled('div')(({theme}) => ({
     display: 'flex',
-    backgroundColor: 'white',
+    backgroundColor: theme.palette.background.paper,
     // padding: '0 .5rem',
+    text: theme.palette.text.secondary,
     paddingLeft: '1rem',
     borderRadius: theme.shape.borderRadius,
     width: '40%',
@@ -67,7 +68,7 @@ const Navbar: FC = () => {
                     display: {xs: 'block', sm: 'none'}
                 }}/>
             <SearchWrapper>
-                <InputBase placeholder="Search.." sx={{flex:1}}/>
+                <InputBase placeholder="Search.." sx={{flex: 1}}/>
                 <IconButton>
                     <SearchRounded/>
                 </IconButton>

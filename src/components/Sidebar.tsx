@@ -1,10 +1,10 @@
-import {FC} from "react";
+import {Dispatch, FC, SetStateAction} from "react";
 import {Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch} from "@mui/material";
 import {AccountBox, Article, DarkMode, Group, Home, Person, Settings, Storefront} from "@mui/icons-material";
 
-const Sidebar: FC = () => {
+const Sidebar: FC<{setMode: Dispatch<SetStateAction<boolean>>, mode:boolean}> = ({setMode, mode}) => {
     return (<Box
-        flex={1}
+        flex={'0 0 15%'}
         p={2}
         sx={{display: {xs: "none", sm: 'block'}}}
     >
@@ -72,7 +72,7 @@ const Sidebar: FC = () => {
                         <ListItemIcon>
                             <DarkMode/>
                         </ListItemIcon>
-                        <Switch/>
+                        <Switch onChange={()=>setMode(!mode)}/>
                     </ListItemButton>
                 </ListItem>
             </List>

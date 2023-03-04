@@ -4,8 +4,8 @@ import Sidebar from "./Sidebar";
 import RightBar from "./RightBar";
 
 export {
-    Feed,
-    Navbar,
-    Sidebar,
-    RightBar
-}
+  Feed,
+  Navbar,
+  Sidebar,
+  RightBar
+};
